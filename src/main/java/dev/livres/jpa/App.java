@@ -34,7 +34,7 @@ public class App {
 		// Réaliser un find simple permettant d’extraire un livre en fonction de son id.
 		Livre find = em1.find(Livre.class, 4);
 		if (find != null) {
-			System.out.println(find.getId());
+			System.out.println(find.getId() + "--"+find.getTitre());
 		}
 
 		// Faire maintenant une requête JPQL pour trouver un LIVRE en fonction de son nom 
